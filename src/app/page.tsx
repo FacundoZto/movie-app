@@ -17,11 +17,11 @@ const Home = async ({searchParams}:{searchParams: {genre: string}}) => {
     throw new Error('Failed to fetch data');
   }
   const results = data.results;
-
+  
   return (
-    <div>
+    <main>
       <Cards results={results}/>
-    </div>
+    </main>
   )
 }
 
