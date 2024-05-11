@@ -1,9 +1,10 @@
-
+import Image from "next/image"
+import spinner from "../../public/spinner.svg"
 const loading = () => {
  
   return (
     <div className="flex justify-center mt-4">
-      <img src="spinner.svg" alt="Loading..." />
+      {spinner && <Image src={spinner} alt="Loading..." />}
     </div>
   )
 }
