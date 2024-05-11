@@ -7,7 +7,7 @@ import { FiThumbsUp } from 'react-icons/fi'
 const Card = ({movie}: {movie: Movie}) => {
   return (
     <div className='group p-2 cursor-pointer transition-transform duration-500 hover:scale-105'>
-      <Link href={`/${movie.id}`}>
+      <Link href={`/movie/${movie.id}`}>
         <Image 
           src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`} 
           alt={movie.title} 
