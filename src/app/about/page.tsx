@@ -5,21 +5,26 @@ const About = () => {
     <div className='flex flex-col max-w-6xl mx-auto p-3 gap-3'>
       <h2 className='text-2xl font-semibold text-teal-500'>About</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos sapiente magni adipisci natus rerum, at dolorum quam numquam dolore minus eligendi cum, harum quaerat totam a molestias amet blanditiis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem unde incidunt laborum possimus, perspiciatis distinctio praesentium reprehenderit, earum ea atque quae eius corrupti, dolore error modi quisquam cum numquam!
-        Voluptates quas consectetur placeat nostrum aut omnis? Excepturi aperiam enim deleniti officiis aliquid earum maxime saepe. Modi saepe quam quo odio ducimus, incidunt perferendis, error tempore facilis iusto reprehenderit possimus.
+        This is a movie database website that uses the themoviedb API to fetch movie data. 
+        It is designed to provide you with a comprehensive database of
+        movies from all around the world, along with the latest news, reviews,
+        and trailers. The movie database is constantly updated with new
+        releases, ensuring that you have access to the latest and greatest in
+        the world of cinema. You can search for movies by title, director,
+        actor, genre, or release date, making it easy to find the perfect movie
+        for any occasion.
       </p>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos sapiente magni adipisci natus rerum, at dolorum quam numquam dolore minus eligendi cum, harum quaerat totam a molestias amet blanditiis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem unde incidunt laborum possimus, perspiciatis distinctio praesentium reprehenderit, earum ea atque quae eius corrupti, dolore error modi quisquam cum numquam!
+        This website was made with Next.js and deployed with Vercel.
+        The API is used to fetch movie data from the <a href="https://www.themoviedb.org/" className='text-teal-500'>The Movie Database</a>.
+        The technology used in the project was: <a href="https://nextjs.org/">Next.js</a>, <a href="https://www.typescriptlang.org/">Typescript</a> and <a href="https://tailwindcss.com/">Tailwind CSS</a>.
       </p>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos sapiente magni adipisci natus rerum, at dolorum quam numquam dolore minus eligendi cum, harum quaerat totam a molestias amet blanditiis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem unde incidunt laborum possimus, perspiciatis distinctio praesentium reprehenderit, earum ea atque quae eius corrupti, dolore error modi quisquam cum numquam!
-        Voluptates quas consectetur placeat nostrum aut omnis? Excepturi aperiam enim deleniti officiis aliquid earum maxime saepe. Modi saepe quam quo odio ducimus, incidunt perferendis, error tempore facilis iusto reprehenderit possimus.
+        Github: https://github.com/FacundoZto/movie-app
       </p>
+
     </div>
   )
 }
