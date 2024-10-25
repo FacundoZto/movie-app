@@ -14,7 +14,7 @@ const MoviePage = async ({params}: {params: {id: string}}) => {
           alt={movie.title}
           width={500}
           height={300}
-          className="rounded-lg object-cover object-top w-10/12 h-96 md:w-1/3 lg:w-1/2" 
+          className="rounded-lg object-cover object-center w-10/12 h-96 md:w-1/3 lg:w-1/2" 
         ></Image>
         <div className="p-2">
           <h2 className="text-lg mb-3 font-bold">{movie.title || movie.name}</h2>
