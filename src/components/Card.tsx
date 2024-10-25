@@ -13,7 +13,7 @@ const Card = ({movie}: {movie: Movie}) => {
           alt={movie.title} 
           width={500} 
           height={400}
-          className='sm:rounded-t-lg group-hover:brightness-110 transition-brightness duration-300' />
+          className='h-52 object-cover object-center sm:rounded-t-lg group-hover:brightness-110 transition-brightness duration-300' />
       </Link>
       <div className='p-2'>
         <p className='line-clamp-2 font-normal text-sm'>{movie.overview}</p>
