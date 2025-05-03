@@ -13,7 +13,7 @@ const Header = () => {
       <div className="flex gap-5 items-center">
         <DarkMode />
         <Link href={"/"} className="flex gap-1 items-center">
-          <span className="text-2xl font-bold bg-teal-500 py-1 px-3 rounded-lg">IMDb</span>
+          <span className="text-2xl font-bold bg-teal-500 py-1 px-3 rounded-lg text-white">IMDb</span>
           <span className="text-xl hidden sm:inline" >Movies</span>
         </Link>
       </div>
