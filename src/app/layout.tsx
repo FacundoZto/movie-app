@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/Header";
 import Providers from "./Providers";
-import NavBar from "@/components/NavBar";
-import SearchBox from "@/components/SearchBox";
+import LayoutWrapper from '@/components/LayoutWrapper';
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,10 +20,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
-          <Header />
-          <NavBar />
-          <SearchBox />
-          {children}
+          <LayoutWrapper>
+            {children}
+          </LayoutWrapper>
         </Providers>
       </body>
     </html>
