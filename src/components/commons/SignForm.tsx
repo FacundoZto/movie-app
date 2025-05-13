@@ -1,9 +1,10 @@
+import Link from "next/link";
 import SignButton from '@/components/commons/SignButton';
-import GoogleButton from '@/components/commons/GoogleButton';
+//import GoogleButton from '@/components/commons/GoogleButton';
 import { SignFormProps } from '@/interfaces/SignFormProps';
 
 const SignForm = (props: SignFormProps) => {
-  const {user, title, subtitle, linkText, handleSubmit, handleChange, loading, error, buttonText, googleSignIn} = props;
+  const {user, title, subtitle, linkText, linkTextHref, handleSubmit, handleChange, loading, error, buttonText, googleSignIn} = props;
 
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -13,9 +14,9 @@ const SignForm = (props: SignFormProps) => {
         </h2>
         <p className="mt-2 text-center text-sm/6 text-gray-500 dark:text-white">
           {subtitle}
-          <a href="#" className="font-semibold text-teal-500 hover:text-teal-400">
+          <Link href={linkTextHref} className="font-semibold text-teal-500 hover:text-teal-400">
             {linkText}
-          </a>
+          </Link>
         </p>
       </div>
 
@@ -69,12 +70,12 @@ const SignForm = (props: SignFormProps) => {
           </div>
         </form>
 
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           <p className="mt-10 text-center text-sm/6 text-gray-500 dark:text-white">
             Or continue with
           </p>
           <GoogleButton onClick={googleSignIn} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

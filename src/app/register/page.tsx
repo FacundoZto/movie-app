@@ -47,6 +47,7 @@ const RegisterPage = () => {
       title="Create your account"
       subtitle={"Already have an account? "}
       linkText="Log in"
+      linkTextHref="/login"
       buttonText="Sign up"
       handleChange={handleChange}
       handleSubmit={handleRegister}

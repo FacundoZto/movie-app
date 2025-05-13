@@ -2,6 +2,7 @@ export type SignFormProps = {
   title: string;
   subtitle: string;
   linkText: string;
+  linkTextHref: string;
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   user: {
@@ -11,5 +12,5 @@ export type SignFormProps = {
   loading: boolean;
   error: string;
   buttonText: string;
-  googleSignIn: () => void;
+  googleSignIn?: () => void;
 }

@@ -44,6 +44,7 @@ const LoginPage = () => {
       title="Sign in to your account"
       subtitle={"Don’t have an account? "}
       linkText="Register"
+      linkTextHref="/register"
       buttonText="Sign in"
       handleChange={handleChange}
       handleSubmit={handleLogin}
