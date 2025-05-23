@@ -11,7 +11,8 @@ const MoviePage = async ({params}: {params: {id: string}}) => {
       <div className="p-4 md:p-8 flex flex-col items-center md:flex-row content-center md:items-start max-w-6xl mx-auto md:space-x-6">
         <Image 
           src={`https://image.tmdb.org/t/p/original/${movie.poster_path || movie.backdrop_path}`}
-          alt={movie.title}
+          alt={movie.title ? movie.title : movie.name}
+          priority
           width={500}
           height={300}
           className="rounded-lg object-cover object-center w-10/12 h-96 md:w-1/3 lg:w-1/2" 

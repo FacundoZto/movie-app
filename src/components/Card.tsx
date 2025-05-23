@@ -10,10 +10,10 @@ const Card = ({movie}: {movie: Movie}) => {
       <Link href={`/movie/${movie.id}`}>
         <Image 
           src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`} 
-          alt={movie.title} 
+          alt={movie.title ? movie.title : movie.name} 
           width={500} 
-          height={400}
-          className='h-52 object-cover object-center sm:rounded-t-lg group-hover:brightness-110 transition-brightness duration-300' />
+          height={220}
+          className='object-cover object-center sm:rounded-t-lg group-hover:brightness-110 transition-brightness duration-300' />
       </Link>
       <div className='p-2'>
         <p className='line-clamp-2 font-normal text-sm'>{movie.overview}</p>
